@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Cunia';
+  src: url(../public/Cunia.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../public/Montserrat.ttf);
+}
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url(../public/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url(../public/Montserrat-Bold.ttf);
+}
