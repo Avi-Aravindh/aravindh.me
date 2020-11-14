@@ -5,12 +5,12 @@ import Layout from '../components/Layout/layout';
 
 const Blog = () => {
   return (
-    <Layout>
+    <Fragment>
       <Head>
         <title>Avi - Blog</title>
       </Head>
       <div>Blog</div>
-    </Layout>
+    </Fragment>
   );
 };
 

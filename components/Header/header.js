@@ -9,9 +9,10 @@ export default function Header() {
 
   const getLinkStyles = (href) => {
     let linkClass = classNames(
-      'flex text-gray-500 ml-6 mr-6 text-xl cursor-pointer tracking-widest uppercase font-montserratBold',
+      'flex text-gray-500 hover:text-gray-900 ml-6 mr-6 text-xl cursor-pointer tracking-widest uppercase font-montserratBold',
       {
-        'text-blue-600': router.pathname == href,
+        // 'text-blue-600': router.pathname == href,
+        'text-gray-900': router.pathname == href,
         'cursor-none': router.pathname == href,
       }
     );
