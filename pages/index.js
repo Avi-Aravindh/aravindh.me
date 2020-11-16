@@ -7,7 +7,7 @@ import Social from '../components/Social/social';
 
 export default function Home() {
   return (
-    <div className='bg-gray-100 h-screen w-screen'>
+    <div className='bg-white h-screen w-screen'>
       <Head>
         <title>Avi - Home</title>
         <link rel='icon' href='/favicon.ico' />
