@@ -4,8 +4,11 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 import Social from '../components/Social/social';
+import sanityClient from '../client';
+import imageUrlFor from '../utils/imageUrlFor';
 
-export default function Home() {
+const Home = (props) => {
+  console.log('props', props);
   return (
     <div className='bg-white h-screen w-screen'>
       <Head>
@@ -16,12 +19,15 @@ export default function Home() {
       <div className='w-full flex flex-col justify-center items-center'>
         <div className='w-4/5 mt-8 md:mt-16 border-black flex flex-col justify-center'>
           <div className='flex justify-center'>
-            <Image
-              src='/avi.jpeg'
-              width={100}
-              height={100}
-              className='rounded-full shadow-md'
-            />
+            <div>
+              <img
+                // src='/avi.jpeg'
+                src={imageUrlFor(props.authors[0].mainImage).url()}
+                width={100}
+                height={100}
+                className='rounded-full shadow-md'
+              />
+            </div>
           </div>
           <div className='font-montserratBold text-xl md:text-3xl flex justify-center mt-8  '>
             Aravindh 'Avi'
@@ -29,6 +35,7 @@ export default function Home() {
           <div className='font-montserratBold text-xl md:text-3xl flex justify-center mt-1  '>
             Sankaranarayanan
           </div>
+
           <div className='font-montserrat w-full text-md md:text-2xl flex items-center flex-col justify-center mt-4  '>
             <div className='w-5/5 md:w-3/6 justify-center flex text-center tracking-wide'>
               Full stack web developer
@@ -57,4 +64,10 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+Home.getInitialProps = async (context) => {
+  const authors = await sanityClient.fetch(`*[_type=="siteContent"]`);
+  return { authors: authors };
+};
+export default Home;
