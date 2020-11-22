@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 import Social from '../components/Social/social';
-import sanityClient from '../client';
+import client from '../client';
 import imageUrlFor from '../utils/imageUrlFor';
 
 const Home = (props) => {
@@ -14,6 +14,13 @@ const Home = (props) => {
       <Head>
         <title>Avi - Home</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta name='author' content='Aravindh Sankaranarayanan' />
+        <meta name='author' content='Avi' />
+        <meta name='description' content='aravindh.me home page' />
+        <meta
+          name='viewport'
+          content='width=device-initial, initial-scale = 1.0'
+        />
       </Head>
 
       <div className='w-full flex flex-col justify-center items-center'>
@@ -22,10 +29,11 @@ const Home = (props) => {
             <div>
               <img
                 // src='/avi.jpeg'
-                src={imageUrlFor(props.authors[0].mainImage).url()}
+                src={imageUrlFor(props.authors[0].mainImage).width(100).url()}
                 width={100}
                 height={100}
                 className='rounded-full shadow-md'
+                alt='Avi'
               />
             </div>
           </div>
@@ -67,7 +75,7 @@ const Home = (props) => {
 };
 
 Home.getInitialProps = async (context) => {
-  const authors = await sanityClient.fetch(`*[_type=="siteContent"]`);
+  const authors = await client.fetch(`*[_type=="siteContent"]`);
   return { authors: authors };
 };
 export default Home;
