@@ -17,10 +17,6 @@ const Home = (props) => {
         <meta name='author' content='Aravindh Sankaranarayanan' />
         <meta name='author' content='Avi' />
         <meta name='description' content='aravindh.me home page' />
-        <meta
-          name='viewport'
-          content='width=device-initial, initial-scale = 1.0'
-        />
       </Head>
 
       <div className='w-full flex flex-col justify-center items-center'>
