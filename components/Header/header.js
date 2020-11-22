@@ -38,7 +38,7 @@ export default function Header() {
   let expandButtonStyle = classNames(navButtonStyle, { hidden: expand });
 
   return (
-    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray-300'>
+    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray-300 leading-normal'>
       <div>
         <Link href='/'>
           <div className='text-3xl pl-5 cursor-pointer tracking-widest font-cunia'>

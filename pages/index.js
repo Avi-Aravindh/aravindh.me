@@ -19,7 +19,7 @@ const Home = (props) => {
         <meta name='description' content='aravindh.me home page' />
       </Head>
 
-      <div className='w-full flex flex-col justify-center items-center'>
+      <div className='w-full flex flex-col justify-center items-center leading-normal'>
         <div className='w-4/5 mt-8 md:mt-16 border-black flex flex-col justify-center'>
           <div className='flex justify-center'>
             <div>
