@@ -82,9 +82,9 @@ export default function Header() {
           <div className={getLinkStyles('/lab')}>Lab</div>
         </Link>
 
-        <Link href='/blog'>
+        {/* <Link href='/blog'>
           <div className={getLinkStyles('/blog')}>Blog</div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function social() {
+export default function Social() {
   var twitterIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -66,7 +66,7 @@ export default function social() {
         </a>
       </div>
       <div className='cursor-pointer hover:text-blue-400'>
-        <a href='mailto:avi@aravidh.me' target='_blank'>
+        <a href='mailto:avi@aravindh.me' target='_blank'>
           {emailIcon}
         </a>
       </div>

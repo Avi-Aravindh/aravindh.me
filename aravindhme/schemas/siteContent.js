@@ -16,5 +16,10 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: 'skills',
+      title: 'Skills',
+      type: 'skills',
+    },
   ],
 };

@@ -3,7 +3,9 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
-import Social from '../components/Social/social';
+import Social from '../components/Social';
+import Skills from '../components/Skills';
+
 import client from '../client';
 import imageUrlFor from '../utils/imageUrlFor';
 
@@ -19,7 +21,7 @@ const Home = (props) => {
         <meta name='description' content='aravindh.me home page' />
       </Head>
 
-      <div className='w-full flex flex-col justify-center items-center leading-normal'>
+      <div className='w-full flex flex-col justify-start items-center leading-normal h-full '>
         <div className='w-4/5 mt-8 md:mt-16 border-black flex flex-col justify-center'>
           <div className='flex justify-center'>
             <div>
@@ -62,6 +64,9 @@ const Home = (props) => {
             </div>
           </div>
         </div>
+        {/* <div className='w-full justify-center flex mt-8 '>
+          <Skills skillsets={props.authors[0].skills} />
+        </div> */}
         <div className='w-full justify-center flex mt-8 '>
           <Social />
         </div>
