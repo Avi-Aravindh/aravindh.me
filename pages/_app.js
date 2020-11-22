@@ -4,7 +4,7 @@ import Layout from '../components/Layout/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <Layout className='leading-normal'>
       <Component {...pageProps} />
     </Layout>
   );
