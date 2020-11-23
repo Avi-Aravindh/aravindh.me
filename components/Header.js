@@ -9,10 +9,9 @@ export default function Header() {
 
   const getLinkStyles = (href) => {
     let linkClass = classNames(
-      'flex text-gray-500 hover:text-gray-900 ml-6 mr-6 text-xl cursor-pointer tracking-widest uppercase font-montserratBold',
+      'flex text-black ml-6 mr-6 text-2xl cursor-pointer tracking-widest uppercase font-SegoeUIRegular',
       {
-        // 'text-blue-600': router.pathname == href,
-        'text-gray-900': router.pathname == href,
+        'font-SegoeUISemiBold': router.pathname == href,
         'cursor-none': router.pathname == href,
       }
     );
@@ -38,10 +37,10 @@ export default function Header() {
   let expandButtonStyle = classNames(navButtonStyle, { hidden: expand });
 
   return (
-    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray-300 leading-normal'>
+    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray leading-normal'>
       <div>
         <Link href='/'>
-          <div className='text-3xl pl-5 cursor-pointer tracking-widest font-cunia'>
+          <div className='text-3xl pl-12 cursor-pointer tracking-widest font-SegoeUIBold'>
             AVI
           </div>
         </Link>
@@ -80,9 +79,6 @@ export default function Header() {
 
         <Link href='/lab'>
           <div className={getLinkStyles('/lab')}>Lab</div>
-        </Link>
-        <Link href='/lab1'>
-          <div className={getLinkStyles('/lab1')}>Lab1</div>
         </Link>
 
         {/* <Link href='/blog'>

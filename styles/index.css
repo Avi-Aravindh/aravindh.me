@@ -22,3 +22,28 @@
   font-family: 'Roboto-regular';
   src: url(../public/Roboto-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'SegoeUI-Regular';
+  src: url(../public/segoeui-regular.ttf);
+}
+
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url(../public/segoeui-bold.ttf);
+}
+
+@font-face {
+  font-family: 'SegoeUI-Light';
+  src: url(../public/segoeui-light.ttf);
+}
+
+@font-face {
+  font-family: 'SegoeUI-SemiLight';
+  src: url(../public/segoeui-semiLight.ttf);
+}
+
+@font-face {
+  font-family: 'SegoeUI-SemiBold';
+  src: url(../public/segoeui-semiBold.ttf);
+}

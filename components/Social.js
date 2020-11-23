@@ -4,8 +4,8 @@ export default function Social() {
   var twitterIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='40'
-      height='40'
+      width='30'
+      height='30'
       viewBox='0 0 24 24'
       className='fill-current'
     >
@@ -16,8 +16,8 @@ export default function Social() {
   var linkedinIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='40'
-      height='40'
+      width='30'
+      height='30'
       viewBox='0 0 24 24'
       className='fill-current'
     >
@@ -28,8 +28,8 @@ export default function Social() {
   var githubIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='40'
-      height='40'
+      width='30'
+      height='30'
       viewBox='0 0 24 24'
       className='fill-current'
     >
@@ -40,8 +40,8 @@ export default function Social() {
   var emailIcon = (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='40'
-      height='40'
+      width='30'
+      height='30'
       viewBox='0 0 24 24'
       className='fill-current'
     >
@@ -49,7 +49,7 @@ export default function Social() {
     </svg>
   );
   return (
-    <div className='w-56 flex justify-around md:mt-4'>
+    <div className='w-56 flex justify-around'>
       <div className='cursor-pointer hover:text-blue-400'>
         <a href='https://twitter.com/avinarain' target='_blank'>
           {twitterIcon}
