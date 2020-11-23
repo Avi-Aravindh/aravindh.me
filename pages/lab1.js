@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 
-import Post from '../components/Post';
+import Post1 from '../components/Post1';
 import client from '../client';
 
 const Lab = ({ projects }) => {
@@ -27,9 +27,9 @@ const Lab = ({ projects }) => {
             </span>
           </div>
         </div>
-        <div className='w-full mt-8 md:flex md:flex-wrap md:w-3/5 md:justify-center'>
+        <div className='w-full mt-8 md:flex md:flex-wrap md:w-3/5 '>
           {projects.map((project, index) => (
-            <Post {...project} index={index} />
+            <Post1 {...project} index={index} />
           ))}
         </div>
       </div>

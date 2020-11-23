@@ -14,6 +14,7 @@ module.exports = {
         montserratLight: ['Montserrat-light'],
         montserratBold: ['Montserrat-Bold'],
         cunia: ['Cunia'],
+        Roboto: ['Roboto-regular'],
       },
     },
   },

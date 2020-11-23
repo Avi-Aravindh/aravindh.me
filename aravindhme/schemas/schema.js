@@ -11,6 +11,7 @@ import post from './post';
 import author from './author';
 import siteContent from './siteContent';
 import skills from './skills';
+import project from './projects';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,5 +30,6 @@ export default createSchema({
     blockContent,
     siteContent,
     skills,
+    project,
   ]),
 });
