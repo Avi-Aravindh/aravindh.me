@@ -13,8 +13,8 @@ const Lab = ({ projects }) => {
         <title>Avi - Work</title>
       </Head>
       <div className='w-full flex flex-row flex-wrap justify-center items-start '>
-        <div className='w-4/5 md:w-3/5 mt-8 flex justify-center flex-row flex-wrap'>
-          <div className='w-full font-montserrat text-md md:text-xl justify-center'>
+        {/* <div className='w-4/5 md:w-3/5 mt-8 flex justify-center flex-row flex-wrap'>
+          <div className='filter backdrop-brightness w-full font-montserrat text-md md:text-xl justify-center'>
             A collection of things I build out of my own interest. All of the
             work I do in my day job is NDA restricted.
           </div>
@@ -31,7 +31,7 @@ const Lab = ({ projects }) => {
           {projects.map((project, index) => (
             <Post {...project} index={index} />
           ))}
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );

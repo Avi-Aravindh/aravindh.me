@@ -5,6 +5,19 @@ module.exports = {
   },
   purge: [],
   theme: {
+    filter: {
+      // defaults to {}
+      none: 'none',
+      grayscale: 'grayscale(1)',
+      invert: 'invert(1)',
+      sepia: 'sepia(1)',
+    },
+    backdropFilter: {
+      // defaults to {}
+      none: 'none',
+      // blur: 'blur(60px)',
+      brightness: 'brightness(0.6)',
+    },
     borderWidth: {
       DEFAULT: '1px',
       0: '0',
@@ -39,6 +52,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    filter: ['responsive'], // defaults to ['responsive']
+    backdropFilter: ['responsive'],
+  },
+  plugins: [require('tailwindcss-filters')],
 };
