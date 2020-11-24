@@ -3,45 +3,45 @@ import imageUrlFor from '../utils/imageUrlFor';
 
 const Post = ({ title, description, tags, buttons, screenshot, index }) => {
   let postLayoutClass = classNames(
-    'p-12 md:p-1  flex flex-col items-start md:justify-between md:items-end',
+    'p-12 md:p-1 flex flex-col items-start md:justify-between md:items-end mt-1 md:mt-five',
     {
       'md:flex-row': index % 2 == 0,
       'md:flex-row-reverse': index % 2 !== 0,
-      'md:mt-5': index != 0,
-      'md:mb-5': index != 0,
     }
   );
 
   console.log('post', { title, description, tags, buttons, screenshot, index });
   return (
     <div className={postLayoutClass}>
-      <img
-        class='lg:h-54 md:h-36 md:w-2/5 object-cover object-center mb-5'
-        src={imageUrlFor(screenshot).url()}
-        alt='blog'
-      ></img>
-      <div className='md:w-3/6'>
+      <div className='lg:h-54 md:h-36 md:w-2/5 rounded-md border-3 md:border-8 border-white shadow-profile'>
+        <img
+          class='w-full'
+          src={imageUrlFor(screenshot).url()}
+          alt='blog'
+        ></img>
+      </div>
+      <div className='md:w-3/6 items-center flex flex-col'>
         <div className='flex flex-row flex-wrap w-full'>
           {tags.map((tag, index) => (
-            <div className='bg-blueBackground  p-3 mr-3 rounded flex justify-center items-center'>
-              <span class='text-blueText font-bold font-SegoeUIRegular text-md'>
+            <div className='bg-blueBackground  p-3 mr-3 rounded flex justify-center items-center mt-3 md:mt-0 '>
+              <span class='text-blueText font-bold font-SegoeUIRegular text-md md:text-lg'>
                 {tag}
               </span>
             </div>
           ))}
         </div>
-        <h2 class=' font-SegoeUIBold text-black text-3xl font-medium text-gray-900 mt-4 mb-4'>
+        <h2 class='w-full font-SegoeUIBold text-black flex justify-start text-3xl font-medium mt-4 mb-4'>
           {title}
         </h2>
-        <p class='font-SegoeUIRegular text-siteText text-md md:text-xl'>
+        <p class='w-full font-SegoeUIRegular text-siteText text-md md:text-xl'>
           {description}
         </p>
-        <div class='flex items-center flex-wrap pb-4 mb-4 mt-auto w-full'>
+        <div class='flex items-center flex-wrap pb-4 mb-4 mt-4 w-full'>
           {buttons.map((button, index) => (
             <a
               href={button.url}
               target='_blank'
-              class='text-indigo-500 inline-flex items-center  font-montserrat mr-6'
+              class='text-blue inline-flex items-center  font-SegoeUIRegular text-xl md:text-2xl mr-6'
             >
               {button.label}
               <svg

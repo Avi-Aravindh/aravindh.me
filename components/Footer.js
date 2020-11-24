@@ -3,7 +3,7 @@ import Social from './Social';
 const Footer = () => {
   return (
     <div
-      className='bg-gray flex mb-10 md:pl-12 md:pr-12 items-center 
+      className='bg-gray flex mt-10 md:mt-10 mb-10 md:pl-12 md:pr-12 items-center 
     flex-col md:flex-row justify-between'
     >
       <Social />
