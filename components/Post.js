@@ -21,17 +21,21 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
         alt='blog'
       ></img>
       <div className='md:w-3/6'>
-        <div className='flex flex-row flex-wrap'>
+        <div className='flex flex-row flex-wrap w-full'>
           {tags.map((tag, index) => (
-            <span class='mr-3 inline-block py-1 px-3 rounded bg-indigo-100 text-indigo-500 text-sm tracking-widest font-montserrat-bold font-bold'>
-              {tag}
-            </span>
+            <div className='bg-blueBackground  p-3 mr-3 rounded flex justify-center items-center'>
+              <span class='text-blueText font-bold font-SegoeUIRegular text-md'>
+                {tag}
+              </span>
+            </div>
           ))}
         </div>
-        <h2 class=' font-montserrat sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4'>
+        <h2 class=' font-SegoeUIBold text-black text-3xl font-medium text-gray-900 mt-4 mb-4'>
           {title}
         </h2>
-        <p class='leading-relaxed mb-8  font-montserrat'>{description}</p>
+        <p class='font-SegoeUIRegular text-siteText text-md md:text-xl'>
+          {description}
+        </p>
         <div class='flex items-center flex-wrap pb-4 mb-4 mt-auto w-full'>
           {buttons.map((button, index) => (
             <a

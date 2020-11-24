@@ -30,6 +30,7 @@ module.exports = {
     boxShadow: {
       profile: '0px 0px 24px 0px rgba(0,0,0,0.16);',
     },
+
     extend: {
       colors: {
         primary: '#f1f1f1',
@@ -37,6 +38,9 @@ module.exports = {
         gray: '#f4f4f4',
         siteText: '#707070',
         blue: '#0099FF',
+        blueBackground: '#0099FF33',
+        blueText: '#0099FFFF',
+        watermarkText: '#666666',
       },
       fontFamily: {
         montserrat: ['Montserrat'],
@@ -49,6 +53,22 @@ module.exports = {
         SegoeUILight: ['SegoeUI-Light'],
         SegoeUISemiLight: ['SegoeUI-SemiLight'],
         SegoeUISemiBold: ['SegoeUI-SemiBold'],
+      },
+      fontSize: {
+        '8xl': '100px',
+        '10xl': '125px',
+      },
+      opacity: {
+        33: '.33',
+        20: '.20',
+      },
+      margin: {
+        five: '5%',
+        md1: '10%',
+        md2: '13%',
+        twenty: '20%',
+        twentyfive: '25%',
+        thirty: '30%',
       },
     },
   },
