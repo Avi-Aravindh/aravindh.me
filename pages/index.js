@@ -26,33 +26,35 @@ const Home = (props) => {
               />
             </div>
           </div>
-          <div className='w-full font-SegoeUIRegular text-siteText text-lg md:text-4xl justify-center flex mt-10 '>
-            Hello, I'm{' '}
-            <span className='text-black'>
-              {' '}
-              &nbsp;Aravindh 'Avi' Sankaranarayanan
-            </span>
-          </div>
+          <div className='flex justify-start flex-col'>
+            <div className='w-full font-SegoeUIRegular text-siteText text-lg md:text-4xl justify-center flex mt-10 '>
+              Hello, I'm{' '}
+              <span className='text-black'>
+                {' '}
+                &nbsp;Aravindh 'Avi' Sankaranarayanan
+              </span>
+            </div>
 
-          <div
-            className='w-full font-SegoeUIRegular 
+            <div
+              className='w-full font-SegoeUIRegular 
            text-siteText text-lg pl-4 md:text-4xl justify-center flex flex-row mt-8 md:mt-12 '
-          >
-            I'm a full stack web/ mobile developer currently based out of NY/NJ
-            region.
-          </div>
+            >
+              I'm a full stack web/ mobile developer currently based out of
+              NY/NJ region.
+            </div>
 
-          <div
-            className='w-full font-SegoeUIRegular 
+            <div
+              className='w-full font-SegoeUIRegular 
            text-siteText text-lg md:text-4xl justify-center flex mt-3 '
-          >
-            Logo was my first programming language.
-          </div>
-          <div
-            className='w-full font-SegoeUIRegular 
+            >
+              Logo was my first programming language.
+            </div>
+            <div
+              className='w-full font-SegoeUIRegular 
            text-siteText text-lg pl-4 md:text-4xl justify-center flex mt-3 '
-          >
-            I have over a decade of experience in building digital products.
+            >
+              I have over a decade of experience in building digital products.
+            </div>
           </div>
           <div
             className='w-full font-SegoeUIRegular 
