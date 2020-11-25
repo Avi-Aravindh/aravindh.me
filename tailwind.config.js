@@ -16,8 +16,8 @@ module.exports = {
       // defaults to {}
       none: 'none',
       blur: 'blur(10px)',
-      brightness: 'brightness(0.6)',
-      opacity: 'opacity(0.48)',
+      // brightness: 'brightness(0.6)',
+      // opacity: 'opacity(0.48)',
     },
     borderWidth: {
       DEFAULT: '1px',
@@ -57,6 +57,9 @@ module.exports = {
       opacity: {
         33: '.33',
         20: '.20',
+        30: '.30',
+        40: '.40',
+        90: '.90',
       },
       margin: {
         five: '5%',

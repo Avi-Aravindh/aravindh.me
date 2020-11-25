@@ -14,14 +14,17 @@ const Lab = ({ projects }) => {
       <div className='w-full flex flex-row flex-wrap justify-center items-start '>
         <div className='w-full border mt-2  flex justify-center flex-col '>
           <div
-            className='w-2/5 md:w-3/5 font-SegoeUIBold text-4xl md:text-10xl 
-          uppercase text-watermarkText opacity-20 flex justify-center'
+            className='w-full md:w-3/5 font-SegoeUIBold text-4xl md:text-10xl 
+          uppercase text-watermarkText opacity-40 flex justify-center'
           >
             Lab
           </div>
           {/* <div className='w-4/6 md:w-3/6 -mt-6 md:-mt-20 ml-twenty md:ml-twenty bg-white p-5 md:p-6 flex justify-center items-center'> */}
           <div className='w-full flex justify-center'>
-            <div className='-mt-6 md:-mt-20 w-4/5 md:w-2/5 bg-white p-5 md:p-6 flex justify-center items-center backdropFilter-brightness'>
+            <div
+              className='-mt-6 md:-mt-20 w-4/5 md:w-2/5 bg-white p-5 md:p-6 flex justify-center 
+            items-center backdropFilter-blur opacity-90 rounded-md'
+            >
               <div className='w-5/6 text-siteText font-SegoeUIRegular text-md md:text-2xl'>
                 A collection of things I build out of my own interest. All of
                 the work I do in my day job is NDA restricted. <br />
