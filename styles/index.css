@@ -22,14 +22,6 @@ a {
 }
 
 @font-face {
-  font-family: 'Cunia';
-  src: url(../public/Cunia.ttf);
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../public/Montserrat.ttf);
-}
-@font-face {
   font-family: 'SegoeUI-Regular';
   src: url(../public/segoeui-regular.ttf);
 }
