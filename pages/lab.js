@@ -19,7 +19,7 @@ const Lab = ({ projects }) => {
           >
             Lab
           </div>
-          {/* <div className='w-4/6 md:w-3/6 -mt-6 md:-mt-20 ml-twenty md:ml-twenty bg-white p-5 md:p-6 flex justify-center items-center'> */}
+
           <div className='w-full flex justify-center'>
             <div
               className='-mt-6 md:-mt-20 w-4/5 md:w-2/5 bg-white p-5 md:p-6 flex justify-center 
