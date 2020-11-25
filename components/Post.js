@@ -46,7 +46,7 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
               <div className='flex items-center'>
                 {button.label}
                 <svg
-                  className='w-5 h-5 ml-1 mt-1'
+                  className='w-5 h-5 ml-1 mt-1 md:mt-2'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
                   stroke-width='2'
