@@ -1,15 +1,3 @@
-// const skillsets = [
-//   'React',
-//   'React Native',
-//   'Ag-Grid',
-//   'Highcharts',
-//   'D3.js',
-//   'MongoDB',
-//   'PostgreSQL',
-//   'Next JS',
-//   'Sanity',
-//   'Node JS',
-// ];
 const Skills = ({ skillsets }) => {
   return (
     <>

@@ -5,7 +5,6 @@ import Post from '../components/Post';
 import client from '../client';
 
 const Lab = ({ projects }) => {
-  console.log('lab', projects);
   return (
     <Fragment>
       <Head>
