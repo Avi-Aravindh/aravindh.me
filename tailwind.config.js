@@ -43,11 +43,6 @@ module.exports = {
         watermarkText: '#666666',
       },
       fontFamily: {
-        montserrat: ['Montserrat'],
-        montserratLight: ['Montserrat-light'],
-        montserratBold: ['Montserrat-Bold'],
-        cunia: ['Cunia'],
-        Roboto: ['Roboto-regular'],
         SegoeUIRegular: ['SegoeUI-Regular'],
         SegoeUIBold: ['SegoeUI-Bold'],
         SegoeUILight: ['SegoeUI-Light'],
@@ -64,6 +59,7 @@ module.exports = {
       },
       margin: {
         five: '5%',
+        eight: '8%',
         md1: '10%',
         md2: '13%',
         twenty: '20%',

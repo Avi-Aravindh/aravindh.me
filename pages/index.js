@@ -67,11 +67,11 @@ const Home = (props) => {
           >
             <a
               href='./lab'
-              class='text-blue inline-flex items-center  font-SegoeUIRegular'
+              className='text-blue inline-flex items-center  font-SegoeUIRegular'
             >
               View my lab
               {/* <svg
-                class='w-6 h-6 ml-2'
+                className='w-6 h-6 ml-2'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
                 stroke-width='3'

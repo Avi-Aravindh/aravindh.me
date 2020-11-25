@@ -30,19 +30,6 @@ a {
   src: url(../public/Montserrat.ttf);
 }
 @font-face {
-  font-family: 'Montserrat-light';
-  src: url(../public/Montserrat-Light.ttf);
-}
-@font-face {
-  font-family: 'Montserrat-bold';
-  src: url(../public/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: 'Roboto-regular';
-  src: url(../public/Roboto-Regular.ttf);
-}
-
-@font-face {
   font-family: 'SegoeUI-Regular';
   src: url(../public/segoeui-regular.ttf);
 }
