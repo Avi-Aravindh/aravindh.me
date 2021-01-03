@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
+
 import Head from 'next/head';
 
-import Post from '../components/Post';
 import client from '../client';
+import Post from '../components/Post';
 
 const Lab = ({ projects }) => {
   return (
@@ -56,7 +57,7 @@ export default Lab;
 
 export async function getServerSideProps() {
   const projects = await client.fetch(
-    `*[_type=="project"]{title, description, tags, screenshot, buttons}`
+    `*[_type=="project"] | order(order_id asc){title, description, tags, screenshot, buttons, order_id}`
   );
   return { props: { projects } };
 }

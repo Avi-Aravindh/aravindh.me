@@ -27,31 +27,32 @@ const Home = (props) => {
             </div>
           </div>
           <div className='flex justify-start flex-col '>
-            <div className='pl-10 lg:pl-0 font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-10 '>
+            <div className='text-center justify-center pl-10 lg:pl-0 font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-10 '>
               Hello, I'm{' '}
               <span className='text-black'>
                 {' '}
-                &nbsp;Aravindh 'Avi' Sankaranarayanan
+                &nbsp;Aravindh 'Avi' Sankaranarayanan{' '}
               </span>
+              {/* <span className='text-black'> */}
+              {/* </span> */}
             </div>
 
             <div
-              className='pl-10 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex flex-row mt-8 md:mt-12 '
+              className='pl-10 text-center justify-center md:pl-0 font-SegoeUIRegular
+               text-siteText text-lg md:text-3xl lg:text-4xl  md:justify-center flex flex-row mt-8 md:mt-12 '
             >
-              I'm a full stack web/ mobile developer currently based out of
-              NY/NJ region.
+              I'm a full stack developer currently based out of NY/NJ region.
             </div>
 
             <div
-              className='pl-10 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-3 '
+              className='text-center justify-center pl-10 md:pl-0 font-SegoeUIRegular 
+           text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
             >
               Logo was my first programming language.
             </div>
             <div
-              className='pl-10 pr-5 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-3 '
+              className='pl-10  text-center justify-center pr-5 md:pl-0 font-SegoeUIRegular 
+           text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
             >
               I have over a decade of experience in building digital products.
             </div>
@@ -70,7 +71,7 @@ const Home = (props) => {
                   className='w-5 h-5 ml-1 mt-1 md:mt-2'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
-                  stroke-width='3'
+                  strokeWidth='3'
                   fill='none'
                 >
                   <path d='M5 12h14'></path>

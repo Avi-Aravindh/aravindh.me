@@ -55,5 +55,10 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: 'order_id',
+      title: 'order',
+      type: 'number',
+    },
   ],
 };
