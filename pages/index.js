@@ -27,7 +27,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className='flex justify-start flex-col '>
-            <div className='text-center justify-center pl-10 lg:pl-0 font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-10 '>
+            <div className='text-center justify-center font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-10 '>
               Hello, I'm{' '}
               <span className='text-black'>
                 {' '}
@@ -38,20 +38,20 @@ const Home = (props) => {
             </div>
 
             <div
-              className='pl-10 text-center justify-center md:pl-0 font-SegoeUIRegular
+              className='text-center justify-center font-SegoeUIRegular
                text-siteText text-lg md:text-3xl lg:text-4xl  md:justify-center flex flex-row mt-8 md:mt-12 '
             >
               I'm a full stack developer currently based out of NY/NJ region.
             </div>
 
             <div
-              className='text-center justify-center pl-10 md:pl-0 font-SegoeUIRegular 
+              className='text-center justify-center font-SegoeUIRegular 
            text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
             >
               Logo was my first programming language.
             </div>
             <div
-              className='pl-10  text-center justify-center pr-5 md:pl-0 font-SegoeUIRegular 
+              className='text-center justify-center font-SegoeUIRegular 
            text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
             >
               I have over a decade of experience in building digital products.
@@ -59,7 +59,7 @@ const Home = (props) => {
           </div>
           <div
             className='w-full font-SegoeUIRegular 
-           text-siteText text-lg pl-4 md:text-4xl justify-center flex mt-10 '
+           text-siteText text-lg md:text-4xl justify-center flex mt-10 '
           >
             <a
               href='./lab'
