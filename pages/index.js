@@ -27,7 +27,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className='flex justify-start flex-col '>
-            <div className='pl-10 md:pl-0 font-SegoeUIRegular text-siteText text-lg md:text-4xl justify-start md:justify-center flex mt-10 '>
+            <div className='pl-10 lg:pl-0 font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-10 '>
               Hello, I'm{' '}
               <span className='text-black'>
                 {' '}
@@ -37,7 +37,7 @@ const Home = (props) => {
 
             <div
               className='pl-10 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-4xl justify-start md:justify-center flex flex-row mt-8 md:mt-12 '
+           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex flex-row mt-8 md:mt-12 '
             >
               I'm a full stack web/ mobile developer currently based out of
               NY/NJ region.
@@ -45,13 +45,13 @@ const Home = (props) => {
 
             <div
               className='pl-10 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-4xl justify-start md:justify-center flex mt-3 '
+           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-3 '
             >
               Logo was my first programming language.
             </div>
             <div
               className='pl-10 pr-5 md:pl-0 font-SegoeUIRegular 
-           text-siteText text-lg md:text-4xl justify-start md:justify-center flex mt-3 '
+           text-siteText text-lg md:text-3xl lg:text-4xl justify-start md:justify-center flex mt-3 '
             >
               I have over a decade of experience in building digital products.
             </div>

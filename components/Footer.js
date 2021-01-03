@@ -8,7 +8,7 @@ const Footer = () => {
     >
       <Social />
       <div className='font-SegoeUIRegular text-siteText text-xs md:text-sm mt-3 md:mt-0'>
-        © 2020 Aravindh Sankaranarayanan. All rights reserved.
+        © 2021 Aravindh Sankaranarayanan. All rights reserved.
       </div>
     </div>
   );
