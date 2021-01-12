@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       window.GA_INITIALIZED = true;
     }
     logPageView();
-  }, []);
+  }, [chidlren]);
 
   return (
     <div className='flex flex-col min-h-screen bg-gray'>
