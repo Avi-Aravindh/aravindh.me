@@ -16,6 +16,7 @@
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-ga": "^3.3.0",
     "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
