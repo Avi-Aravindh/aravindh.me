@@ -24,7 +24,7 @@ const Lab = ({ projects }) => {
           <div className='w-full flex justify-center'>
             <div
               className='-mt-6 md:-mt-20 w-4/5 md:w-2/5 bg-white p-5 md:p-6 flex justify-center 
-            items-center backdropFilter-blur opacity-90 rounded-md'
+            items-center backdropFilter-blur opacity-90 rounded-md bg-opacity-75 bg-clip-padding shadow-xl'
             >
               <div className='w-5/6 text-siteText font-SegoeUIRegular text-md md:text-2xl'>
                 A collection of things I build out of my own interest. All of
