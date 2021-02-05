@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 var classNames = require('classnames');
@@ -20,7 +21,7 @@ export default function Header() {
   };
 
   let linkBlock = classNames(
-    'w-full block flex-grow md:flex md:w-auto md:items-center justify-end',
+    'w-full block flex-grow items-center md:flex md:w-auto md:items-center justify-end',
     {
       hidden: expand,
       hidden: !expand,
@@ -37,10 +38,10 @@ export default function Header() {
   let expandButtonStyle = classNames(navButtonStyle, { hidden: expand });
 
   return (
-    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray leading-normal'>
+    <div className='flex-wrap bg-white flex items-center justify-between border-b border-gray leading-normal pb-2'>
       <div>
         <Link href='/'>
-          <div className='text-3xl pl-12 cursor-pointer tracking-widest font-SegoeUIBold'>
+          <div className='text-2xl pl-12 cursor-pointer tracking-widest font-SegoeUIBold'>
             AVI
           </div>
         </Link>

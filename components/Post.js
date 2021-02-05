@@ -23,8 +23,9 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
       <div className='md:w-3/6 items-center flex flex-col'>
         <div className='flex flex-row flex-wrap w-full'>
           {tags.map((tag, index) => (
-            <div className='bg-blueBackground  p-2 mr-5 rounded flex justify-center items-center mt-3 md:mt-0 '>
-              <span className='text-blueText font-bold font-SegoeUIRegular text-md md:text-lg'>
+            // <div className='bg-blueBackground  p-2 mr-5 rounded flex justify-center items-center mt-3 md:mt-0 '>
+            <div className='mr-5 rounded flex justify-center items-center mt-3 md:mt-0 '>
+              <span className='text-blueText mr-5 font-bold font-SegoeUIRegular mt-5 text-md md:text-md lg:text-xl'>
                 {tag}
               </span>
             </div>
@@ -41,7 +42,7 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
             <a
               href={button.url}
               target='_blank'
-              className='text-blue inline-flex items-center  font-SegoeUIRegular text-xl md:text-2xl mr-6'
+              className='text-blue inline-flex items-center  font-SegoeUIRegular text-xl md:text-xl mr-6'
             >
               <div className='flex items-center'>
                 {button.label}

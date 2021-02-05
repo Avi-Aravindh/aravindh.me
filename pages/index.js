@@ -4,8 +4,21 @@ import client from '../client';
 import imageUrlFor from '../utils/imageUrlFor';
 
 const Home = (props) => {
+  const skillTags = [
+    'React',
+    'React Hooks',
+    'Material-UI',
+    'React Native',
+    'Ag-Grid',
+    'Highcharts',
+    'Node JS',
+    'Postgres',
+    'AWS Lambda',
+    'AWS API Gateway',
+    'AWS DynamoDB',
+  ];
   return (
-    <div className=' w-screen'>
+    <div className='w-screen'>
       <Head>
         <title>Avi - Home</title>
         <link rel='icon' href='/favicon.ico' />
@@ -14,7 +27,7 @@ const Home = (props) => {
         <meta name='description' content='aravindh.me home page' />
       </Head>
 
-      <div className='w-full flex flex-col justify-start items-center leading-normal h-full '>
+      <div className='w-full flex flex-col justify-start items-center leading-normal  '>
         <div className='w-full mt-8 md:mt-16 border-black flex flex-col justify-center'>
           <div className='flex justify-center'>
             <div>
@@ -26,46 +39,51 @@ const Home = (props) => {
               />
             </div>
           </div>
-          <div className='flex justify-start flex-col '>
-            <div className='text-center justify-center font-SegoeUIRegular text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-10 '>
-              Hello, I'm{' '}
+          <div className='flex justify-start flex-col w-full '>
+            <div className='text-center justify-center font-SegoeUIRegular text-siteText text-lg md:text-2xl lg:text-3xl md:justify-center flex mt-10 '>
+              Hello, I'm
               <span className='text-black'>
-                {' '}
-                &nbsp;Aravindh 'Avi' Sankaranarayanan{' '}
+                &nbsp;Aravindh 'Avi' Sankaranarayanan
               </span>
-              {/* <span className='text-black'> */}
-              {/* </span> */}
             </div>
+          </div>
+          <div className='flex justify-start flex-col '>
+            <div>
+              <div
+                className='text-center justify-center font-SegoeUIRegular
+               text-siteText text-lg md:text-2xl lg:text-3xl  md:justify-center flex flex-row mt-8 md:mt-12 '
+              >
+                I'm a full stack developer with a front-end focus
+              </div>
 
-            <div
-              className='text-center justify-center font-SegoeUIRegular
-               text-siteText text-lg md:text-3xl lg:text-4xl  md:justify-center flex flex-row mt-8 md:mt-12 '
-            >
-              I'm a full stack developer currently based out of NY/NJ region.
+              <div
+                className='text-center justify-center font-SegoeUIRegular 
+           text-siteText text-lg md:text-2xl lg:text-3xl md:justify-center flex mt-3 '
+              >
+                Currently based out of greater New York area
+              </div>
             </div>
-
-            <div
-              className='text-center justify-center font-SegoeUIRegular 
-           text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
-            >
-              Logo was my first programming language.
-            </div>
-            <div
-              className='text-center justify-center font-SegoeUIRegular 
-           text-siteText text-lg md:text-3xl lg:text-4xl md:justify-center flex mt-3 '
-            >
-              I have over a decade of experience in building digital products.
+          </div>
+          <div className='flex justify-center w-full mt-16'>
+            <div className='flex w-4/5 md:w-3/5 flex-wrap justify-center items-stretch'>
+              {skillTags.map((tag) => (
+                <div className='mr-5 rounded flex justify-center items-center'>
+                  <div className='text-blueText mr-5 font-bold font-SegoeUIRegular mt-5 text-md md:text-md lg:text-xl'>
+                    {tag}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div
             className='w-full font-SegoeUIRegular 
-           text-siteText text-lg md:text-4xl justify-center flex mt-10 '
+           text-siteText text-lg md:text-4xl justify-center flex mt-16 '
           >
             <a
               href='./lab'
-              className='text-blue inline-flex items-center  font-SegoeUIRegular'
+              className='text-blue hover:text-opacity-75 inline-flex items-center  font-SegoeUIRegular text-lg md:text-2xl lg:text-3xl '
             >
-              <div className='flex items-center'>
+              <div className='flex items-center text-md md:text-xl lg:text-2xl'>
                 View my lab
                 <svg
                   className='w-5 h-5 ml-1 mt-1 md:mt-2'
