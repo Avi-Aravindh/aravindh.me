@@ -53,7 +53,7 @@ const Home = (props) => {
                 className='text-center justify-center font-SegoeUIRegular
                text-siteText text-lg md:text-2xl lg:text-3xl  md:justify-center flex flex-row mt-8 md:mt-12 '
               >
-                I'm a full stack developer with a front-end focus
+                I'm a full stack web developer with a front-end focus
               </div>
 
               <div
