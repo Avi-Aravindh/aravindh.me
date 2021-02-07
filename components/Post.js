@@ -3,7 +3,7 @@ import imageUrlFor from '../utils/imageUrlFor';
 
 const Post = ({ title, description, tags, buttons, screenshot, index }) => {
   let postLayoutClass = classNames(
-    'w-full justify-center flex flex-col items-start md:justify-between md:items-start mt-0 md:mt-md1 p-12 md:p-0',
+    'w-full justify-center flex flex-col items-center md:justify-between md:items-center mt-0 md:mt-md1 p-12 md:p-0',
     {
       'md:flex-row': index % 2 == 0,
       'md:flex-row-reverse': index % 2 !== 0,
@@ -12,7 +12,6 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
 
   return (
     <div className={postLayoutClass}>
-      {/* <div className='lg:h-54 md:h-36 md:w-2/5 rounded-md border-3 md:border-8 border-white shadow-profile'> */}
       <div className='md:w-2/5 rounded-md border-3 md:border-8 border-white shadow-profile'>
         <img
           className='w-full'
@@ -23,7 +22,6 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
       <div className='md:w-3/6 items-center flex flex-col'>
         <div className='flex flex-row flex-wrap w-full'>
           {tags.map((tag, index) => (
-            // <div className='bg-blueBackground  p-2 mr-5 rounded flex justify-center items-center mt-3 md:mt-0 '>
             <div className='mr-5 rounded flex justify-center items-center mt-3 md:mt-0 '>
               <span className='text-blueText mr-5 font-bold font-SegoeUIRegular mt-5 text-md md:text-md lg:text-xl'>
                 {tag}
@@ -31,7 +29,7 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
             </div>
           ))}
         </div>
-        <h2 className='w-full font-SegoeUIBold text-black flex justify-start text-3xl font-medium mt-5 mb-5'>
+        <h2 className='w-full font-SegoeUIBold text-black flex justify-start text-2xl font-medium mt-5 mb-5'>
           {title}
         </h2>
         <p className='w-full font-SegoeUIRegular text-siteText text-md md:text-xl'>

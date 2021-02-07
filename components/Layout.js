@@ -17,7 +17,9 @@ export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen bg-gray'>
       <Header />
-      <div className='bg-gray flex-grow'>{children}</div>
+      <div className='bg-gray flex-grow flex justify-center items-center'>
+        {children}
+      </div>
       <Footer className='bottom-0 sticky' />
     </div>
   );

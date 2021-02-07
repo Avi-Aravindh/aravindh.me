@@ -10,7 +10,7 @@ export default function Header() {
 
   const getLinkStyles = (href) => {
     let linkClass = classNames(
-      'flex text-black ml-6 mr-6 text-2xl cursor-pointer tracking-widest uppercase font-SegoeUIRegular',
+      'flex text-black ml-6 mr-6 text-xl cursor-pointer tracking-widest uppercase font-SegoeUIRegular hover:font-bold',
       {
         'font-SegoeUISemiBold': router.pathname == href,
         'cursor-none': router.pathname == href,
@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   let linkBlock = classNames(
-    'w-full block flex-grow items-center md:flex md:w-auto md:items-center justify-end',
+    'w-full block flex-grow items-center md:flex md:w-auto md:items-center justify-end ',
     {
       hidden: expand,
       hidden: !expand,
@@ -81,6 +81,9 @@ export default function Header() {
         <Link href='/lab'>
           <div className={getLinkStyles('/lab')}>Lab</div>
         </Link>
+        {/* <Link href='/contact'>
+          <div className={getLinkStyles('/contact')}>Contact</div>
+        </Link> */}
 
         {/* <Link href='/blog'>
           <div className={getLinkStyles('/blog')}>Blog</div>
