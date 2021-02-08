@@ -1,4 +1,6 @@
 var classNames = require('classnames');
+import ReactPlayer from 'react-player';
+
 import imageUrlFor from '../utils/imageUrlFor';
 
 const Post = ({ title, description, tags, buttons, screenshot, index }) => {
@@ -34,6 +36,14 @@ const Post = ({ title, description, tags, buttons, screenshot, index }) => {
         </h2>
         <p className='w-full font-SegoeUIRegular text-siteText text-md md:text-xl'>
           {description}
+          {/* {title === 'WashWash' && (
+            <ReactPlayer
+              url='https://wash-wash-demo.s3.amazonaws.com/WashWashDemo.mov'
+              // controls={true}
+              height='812px'
+              width='375px'
+            />
+          )} */}
         </p>
         <div className='flex items-center flex-wrap pb-4 mb-4 mt-4 w-full'>
           {buttons.map((button, index) => (
