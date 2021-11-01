@@ -60,7 +60,7 @@ const Home = (props) => {
                 className='text-center justify-center font-SegoeUIRegular 
            text-siteText text-lg md:text-2xl lg:text-3xl md:justify-center flex mt-3 '
               >
-                Currently based out of greater New York area
+                Currently based out of greater Atlanta area
               </div>
             </div>
           </div>
